@@ -1,7 +1,7 @@
 import pandas as pd
-import csv
 import re
-from collections import Counter
+#######Get Average Ages for Titles such as 'Mr', 'Mrs.' etc#########
+####################################################################
 f = pd.read_csv('train.csv')
 f = pd.get_dummies(data = f, columns = ['Survived','Pclass','Sex'])
 name_list = []
@@ -24,4 +24,25 @@ for k in range(len(f)):
 
 for p in prefix_dict:
     prefix_average[p] = int(sum(prefix_dict[p])//len(prefix_dict[p]))
-#prefixes = Counter(name_list).most_common()
+
+#################################
+######MAKE TRAIN FILE############
+#################################
+
+f = pd.read_csv('train.csv')
+f = pd.get_dummies(data = f, columns = ['Survived','Pclass','Sex'])
+f2 = open('train.csv', 'r',encoding = 'utf8').readlines()
+
+#Head: 'PassengerId, Survived, 'PClass, Name, Sex, Age, SibSP, Parch, Ticket, Fare, Cabin, Embarked'
+t = open('train.txt','w',encoding = 'utf8')
+train_dataset = []
+for i in range(0,len(f)):
+    line = list(f.iloc[i])
+    if str(f.iloc[i]['Age']) == 'nan':
+        preff = re.search(' [A-Za-z]+\.', f.iloc[i]['Name']).group()
+        extracted = line[11:] + [int(o) for o in '{0:010b}'.format(prefix_average[preff])] + [int(p) for p in '{0:010b}'.format(int(line[3]))] + [int(q) for q in '{0:010b}'.format(int(line[4]))]
+    else:
+        extracted = line[11:] + [int(o) for o in '{0:010b}'.format(int(line[2]))] + [int(p) for p in '{0:010b}'.format(int(line[3]))] + [int(q) for q in '{0:010b}'.format(int(line[4]))]
+    t.writelines(",".join(map(str,extracted)) + '\n')
+
+t.close()
