@@ -5,4 +5,8 @@ https://www.kaggle.com/c/titanic
 </br>
 </br>
 
-0.74641 --> 0.76076
+
+0.74641</br>
+Binary Age --> 0.76076
+</br>
+Binary Age + Binary Fare --> 0.76794
