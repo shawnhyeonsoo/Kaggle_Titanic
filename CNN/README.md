@@ -17,7 +17,7 @@ CNN Model: </br>
 모델이 정상적으로 동작함을 확인하는 1차 실험에서의 정확도는 76.4% 
 
 |Model| Layers | Accuracy (Kaggle_score)|
-|____|_______|______\______|
+|-----|--------|---------|
 |CNN | 3 conv2d, 2 max pooling, 3 Fully Connected | 0.622|
 |CNN (5000 epoch)| 3 conv2d, 2 max pooling, 3 Fully Connected| 0.722|
 |CNN (5000 epoch + Dropout)| 3 conv2d, 2 max pooling, 3 Fully Connected + 3 Dropout ||
