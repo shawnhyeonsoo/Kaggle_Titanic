@@ -20,4 +20,4 @@ CNN Model: </br>
 |____|_______|______\______|
 |CNN | 3 conv2d, 2 max pooling, 3 Fully Connected | 0.622|
 |CNN (5000 epoch)| 3 conv2d, 2 max pooling, 3 Fully Connected| 0.722|
-|CNN (5000 epoch + Dropout)| 3 conv2d, 2 max pooling, 3 Fully Connected + 3 Dropout |
+|CNN (5000 epoch + Dropout)| 3 conv2d, 2 max pooling, 3 Fully Connected + 3 Dropout ||
