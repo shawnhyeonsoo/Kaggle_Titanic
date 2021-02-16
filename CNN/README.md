@@ -21,3 +21,6 @@ CNN Model: </br>
 |CNN | 3 conv2d, 2 max pooling, 3 Fully Connected | 0.622|
 |CNN (5000 epoch)| 3 conv2d, 2 max pooling, 3 Fully Connected| 0.722|
 |CNN (5000 epoch + Dropout)| 3 conv2d, 2 max pooling, 3 Fully Connected + 3 Dropout |0.715|
+
+
+Epoch를 늘림으로써 오버피팅의 여파가 없지않아 보인다. Validation set으로 테스트하는 성능에서는 낮은 epoch 값에서도 90퍼센트 가까이로 높은 정확도를 보이는 반면, keras에서 측정하는 정확도는 공개되지 않은 테스트 레이블에 대해 측정함으로, 데이터를 처리하는 과정의 중요성이 더 크게 느껴진다. 
