@@ -22,5 +22,5 @@ Approaches and Results: </br>
 
 
 To-do: 
-- CNN
 - LeNet-5
+- Range for age etc instead of binary
