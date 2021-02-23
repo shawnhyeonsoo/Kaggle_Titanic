@@ -10,6 +10,7 @@ https://www.kaggle.com/c/titanic
 Binary Age --> 0.76076
 </br>
 Binary Age + Binary Fare --> 0.76794</br>
+Boundary Age Group + Boundary Fare Group --> 0.7703 </br>
 </br>
 Approaches and Results: </br>
 | Processed Area in Dataset |  Model  | Result (Accuracy) |
