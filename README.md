@@ -19,8 +19,10 @@ Approaches and Results: </br>
 | Pcl, Sibsp, Par (auto-one-hot), Age (binary) | Fully Connected + Dropout | 0.73684|
 | Pcl, Sibsp, Par* Age(binary, filled in from name) | Fully Connected + Dropout + Batch Norm | 0.76076|
 | Pcl, Sibsp, Par* Age(binary, filled in from name), Fare (binary)| Fully Connected + Dropout + Batch Norm | 0.76794|
+| Pcl, Sibsp, Par (one-hot) + Age(boundary group) + Fare (Boundary group) | Fully Connected + Dropout + Batch Norm | 0.7703|
 
 
 To-do: 
 - LeNet-5
-- Range for age etc instead of binary
+- Range for age etc instead of binary (O)
+- More precise fare values
