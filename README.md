@@ -23,6 +23,7 @@ Approaches and Results: </br>
 | Pcl, Sibsp, Par (one-hot) + Age(boundary group) + Fare (Boundary group) | Fully Connected + Dropout + Batch Norm | 0.7703|
 | Pcl, Sibsp, Par (one-hot) + Age(boundary group) + Fare (Boundary group) | RNN | 0.7583|
 | Pcl, Sibsp, Par (one-hot) + Age(boundary group) + Fare (Boundary group) | Fully Connected (max. 800 neurons) + Dropout + Batch Norm | 0.7751|
+| Pcl, Sibsp, Par (one-hot) + Age(boundary group) + Fare (Boundary group) | Fully Connected (39,400,800,2) + Dropout + Batch Norm | 0.7775|
 
 
 To-do: 
