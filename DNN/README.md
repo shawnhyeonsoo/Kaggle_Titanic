@@ -27,3 +27,9 @@ Hyperparams:
 | Learning Rate | Batch Size|
 | -------------|--------|
 |0.05||
+
+
+</br>
+> 2021.03.10 (Wed) </br>
+- Updated DNN parameters
+- Weights (39,400,800,2) 일때 0.7751로 최고 정확도
